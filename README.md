@@ -6,3 +6,4 @@
 - Vuetify 3.7.0-beta.1  
 - FontAwesome 4.7.0
 - jQuery 2.2.4 
+- PWA 포함
