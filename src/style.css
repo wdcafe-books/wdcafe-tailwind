@@ -1,0 +1,70 @@
+/* Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Tailwind CSS 문법 설명
+  1. @tailwind 문법 :
+  Tailwind CSS의 핵심 스타일을 CSS 파일에 삽입하는 데 사용됩니다. 
+  Tailwind는 크게 세 가지 스타일 그룹으로 나뉩니다: base, components, utilities.
+
+    1) @tailwind base: 기본적인 스타일 리셋과 기본 스타일을 추가합니다.
+    2) @tailwind components: 버튼, 폼, 카드 등 재사용 가능한 UI 컴포넌트 스타일을 추가합니다.
+    3) @tailwind utilities: margin, padding, 색상, 글꼴 크기 등 다양한 유틸리티 클래스들을 추가합니다. 
+
+  2. @layer
+  Tailwind CSS의 빌드 시스템에서 CSS가 추가되는 순서를 정의합니다. 이는 CSS의 우선순위를 관리할 수 있게 도와주며, base, components, utilities 레이어를 직접 정의하고 커스터마이징할 수 있습니다.
+
+    1) @layer base
+    base 레이어는 기본적인 스타일을 정의하는 레이어입니다. 이 레이어에서는 기본적인 스타일 리셋과 기본 스타일을 추가합니다.
+
+    2) @layer components
+    components 레이어는 재사용 가능한 UI 컴포넌트 스타일을 추가하는 레이어입니다. 이 레이어에서는 버튼, 폼, 카드 등의 컴포넌트 스타일을 정의합니다.
+
+    3) @layer utilities
+    utilities 레이어는 다양한 유틸리티 클래스들을 추가하는 레이어입니다. 이 레이어에서는 margin, padding, 색상, 글꼴 크기 등의 유틸리티 클래스를 정의합니다. 
+
+  3. @apply
+    @apply는 Tailwind CSS에서 사용되는 문법으로, 기존에 정의된 클래스들을 재사용하여 새로운 클래스를 생성할 수 있습니다. 이를 통해 스타일을 재사용하고 일관성을 유지할 수 있습니다. 
+*/  
+
+/* 추가할 Tailwind CSS 관련 내용은 아래부터 시작 */
+
+/* 기본 스타일 추가 : 기본적인 스타일 리셋과 기본 스타일을 추가할 때 사용됩니다. */ 
+/* @layer base {
+  h1{
+    @apply text-4xl font-bold;
+  }
+  h2{
+    @apply text-3xl font-semibold;
+  }
+  h3{
+    @apply text-2xl font-medium;
+  } 
+} */
+
+/* 컴포넌트 클래스 추가 : 사용자 정의 컴포넌트 클래스를 정의할 때 사용됩니다. */
+@layer components {
+  .btn{
+    @apply bg-blue-500 text-white px-4 py-2 rounded-md;
+  }
+  .card {
+    @apply bg-white shadow-md rounded-lg p-6;
+  }
+}
+
+/* 유틸리티 클래스 추가 : 사용자 정의 유틸리티 클래스를 정의할 때 사용됩니다. */
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .bg-gradient {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+  }
+
+  .border-rounded {
+    border-radius: 12px;
+  }
+}
