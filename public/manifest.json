@@ -1,7 +1,7 @@
 {
   "name": "Tailwind CSS Study",  
   "short_name": "Tailwind CSS Study",
-  "theme_color": "#942EFB",
+  "theme_color": "#2471f6",
   "background_color": "#fff",
   "display": "standalone",
   "orientation": "portrait-primary",

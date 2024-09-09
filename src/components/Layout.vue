@@ -7,7 +7,7 @@
 
         <template v-slot:append>
 
-          <nav class="gnb hidden-sm-and-down flex-grow-1 font-weight-bold">
+          <nav class="gnb hidden-md-and-down flex-grow-1 font-weight-bold">
             <router-link to="/home">HOME</router-link>
             <router-link to="/docs" class="mx-3">DOCS</router-link>
             <a href="https://pagedone.io/docs/tailwind-cheat-sheet">SEARCH</a>
